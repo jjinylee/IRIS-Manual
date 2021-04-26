@@ -763,7 +763,7 @@ FORMAT HINT문은 쿼리 실행결과의 출력 형태를 설정합니다. 즉, 
 
 .. code ::
 
-    /*+ FORMAT‘(0=%03’d‘,2=%.2’f) */ select id, name, point from ACCOUNT;
+    /*+ FORMAT (0='%03d', 2='%.2f') */ select id, name, point from ACCOUNT;
 
 THREAD_COUNT HINT문 작성하기
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
